@@ -3,7 +3,7 @@ import type {
   DisconnectOptions,
   WalletState,
   ConnectedChain
-} from '@web3-onboard/core'
+} from '@onboard-dx/core'
 import type { Ref, ComputedRef } from 'vue-demi'
 
 // Syntax sugar for Readonly Refs

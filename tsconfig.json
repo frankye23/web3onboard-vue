@@ -1,15 +1,21 @@
 {
-  "extends": "../../tsconfig.json",
   "include": ["src/**/*"],
 
+  "strict": true,
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src",
+    "declaration": true,
     "declarationDir": "dist",
     "paths": {
       "*": ["./src/*", "./node_modules/*"]
     },
-    "typeRoots": ["node_modules/@types"]
+    "typeRoots": ["node_modules/@types"],
+    "target": "ES2018",
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
   }
 }
 
